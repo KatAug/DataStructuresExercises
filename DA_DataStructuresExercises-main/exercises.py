@@ -5,12 +5,11 @@ Create a new Set with string values that represent colors
 Loop through the Set and print each value
 """
 
-
 def print_colors(set_of_colors):
-    # This code is not complete!
-    # Make sure to loop through this set as directed
-    # And print each color one at a time
-    print(set_of_colors)
+    colors = {"blue", "red", "green", "tomato"}
+    for color in set_of_colors:
+        print(set_of_colors)
+
 
 
 # Problem 2 (Sets)
