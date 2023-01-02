@@ -8,8 +8,7 @@ Loop through the Set and print each value
 def print_colors(set_of_colors):
     colors = {"blue", "red", "green", "tomato"}
     for color in set_of_colors:
-        print(set_of_colors)
-
+        print(color)
 
 
 # Problem 2 (Sets)
@@ -23,8 +22,17 @@ If the color is not in the Set, add that color to the Set
 """
 
 
-def find_favorite_color(set_of_colors):
-    pass
+def find_favorite_color(colors):
+    user_input = input("What is your favorite color? ")
+    if user_input in colors:
+        print("We found your favorite color!")
+    else:
+        colors.add(user_input)
+        print(f"We added {user_input} to the list!")
+
+colors = {"blue", "red", "green", "tomato"}
+#print_colors(colors) 
+#find_favorite_color(colors)
 
 
 # Problem 3 (Sets)
@@ -39,8 +47,8 @@ See: https://www.w3schools.com/python/python_sets_join.asp
 """
 
 
-def add_colors(set_of_colors):
-    pass
+#def add_colors(set_of_colors):
+    #pass
 
 
 # Recommend having this resource open for Problems 4-6
@@ -58,8 +66,8 @@ Next, write a function that displays all coins using a WHILE loop
 """
 
 
-def display_coins(coins):
-    pass
+#def display_coins(coins):
+    #pass
 
 
 # Problem 5 (Tuples)
@@ -72,8 +80,8 @@ See: https://www.w3schools.com/python/python_tuples_update.asp
 """
 
 
-def add_coin(coins):
-    pass
+#def add_coin(coins):
+    #pass
 
 
 # Problem 6 (Tuples)
@@ -86,5 +94,5 @@ NOTE: You will need to convert your Tuple to a Set, then back to a Tuple in orde
 """
 
 
-def display_coin_types(coins):
-    pass
+#def display_coin_types(coins):
+    #pass
