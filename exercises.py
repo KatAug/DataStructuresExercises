@@ -31,8 +31,8 @@ def find_favorite_color(colors):
         print(f"We added {user_input} to the list!")
 
 colors = {"blue", "red", "green", "tomato"}
-#print_colors(colors) 
-#find_favorite_color(colors)
+print_colors(colors) 
+find_favorite_color(colors)
 
 
 # Problem 3 (Sets)
@@ -47,9 +47,16 @@ See: https://www.w3schools.com/python/python_sets_join.asp
 """
 
 
-#def add_colors(set_of_colors):
-    #pass
+def add_colors(colors):
+    user_input = input("What other colors would you like to add? ")
 
+    
+
+
+colors = {"blue", "red", "green", "tomato"}
+print_colors(colors)
+find_favorite_color(colors)
+add_colors(colors)
 
 # Recommend having this resource open for Problems 4-6
 # https://www.w3schools.com/python/python_tuples.asp
