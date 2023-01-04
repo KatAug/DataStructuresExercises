@@ -10,7 +10,6 @@ def print_colors(set_of_colors):
     for color in set_of_colors:
         print(color)
 
-
 # Problem 2 (Sets)
 
 """
@@ -21,7 +20,6 @@ If the color is in the Set, print "We found your favorite color!"
 If the color is not in the Set, add that color to the Set
 """
 
-
 def find_favorite_color(colors):
     user_input = input("What is your favorite color? ")
     if user_input in colors:
@@ -30,12 +28,8 @@ def find_favorite_color(colors):
         colors.add(user_input)
         print(f"We added {user_input} to the list!")
 
-#colors = {"blue", "red", "green", "tomato"}
-#print_colors(colors) 
-#find_favorite_color(colors)
-
-
 # Problem 3 (Sets)
+
 """
 Take the Set from Problem 1
 Display the contents to the user in the terminal
@@ -46,7 +40,6 @@ display the new Set
 See: https://www.w3schools.com/python/python_sets_join.asp
 """
 
-
 def add_colors(colors):
     print("Here are some colors:")
     print_colors(colors)
@@ -55,12 +48,7 @@ def add_colors(colors):
     set_three = colors.union(set_two)
     print(set_three)
     
-
-
-    
-
 colors = {"blue", "red", "green", "tomato"}
-
 
 # Recommend having this resource open for Problems 4-6
 # https://www.w3schools.com/python/python_tuples.asp
@@ -75,11 +63,12 @@ Note that there are duplicates (imagine coins in a purse)
 Next, write a function that displays all coins using a WHILE loop
 
 """
-
-
-#def display_coins(coins):
-    #pass
-
+coins = ("gold", "copper", "silver", "copper", "gold", "silver", "silver")
+def display_coins(coins):
+    change = 0
+    while change < len(coins):
+        print(coins[change])
+        change = change + 1
 
 # Problem 5 (Tuples)
 
@@ -90,10 +79,13 @@ NOTE: You will need to convert your Tuple to a List, then back to a Tuple in ord
 See: https://www.w3schools.com/python/python_tuples_update.asp
 """
 
-
-#def add_coin(coins):
-    #pass
-
+coins = ("gold", "copper", "silver", "copper", "gold", "silver", "silver")
+coin = ("bronze",)
+def add_coin(coins):
+    coins +=coin
+    print(coins)
+    
+#add_coin(coins)
 
 # Problem 6 (Tuples)
 
