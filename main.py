@@ -2,8 +2,8 @@ import exercises
 
 # Problems 1-3
 colors = {"blue", "red", "green", "tomato"}
-#exercises.print_colors(colors)
-#exercises.find_favorite_color(colors)
+exercises.print_colors(colors)
+exercises.find_favorite_color(colors)
 exercises.add_colors(colors)
 
 coins = ("gold", "silver", "copper", "gold")
