@@ -80,13 +80,11 @@ See: https://www.w3schools.com/python/python_tuples_update.asp
 """
 
 coins = ("gold", "copper", "silver", "copper", "gold", "silver", "silver")
-coin = ("bronze",)
 def add_coin(coins):
-    coins +=coin
+    coin = ("bronze",)
+    coins += coin
     print(coins)
     
-#add_coin(coins)
-
 # Problem 6 (Tuples)
 
 """
@@ -96,6 +94,13 @@ Example Output: "gold, silver, copper"
 NOTE: You will need to convert your Tuple to a Set, then back to a Tuple in order to de-duplicate
 """
 
-
-#def display_coin_types(coins):
-    #pass
+coins = ("gold", "copper", "silver", "copper", "gold", "silver", "silver")
+coin = list(coins)
+def display_coin_types(coins):
+    coin.remove("gold")
+    coin.remove("silver")
+    coin.remove("silver")
+    coin.remove("copper")
+    coins = tuple(coin)
+    print(coins)
+    
